@@ -1,0 +1,154 @@
+.intro-section--about {
+  background-image: url(../images/about-intro-bg.jpg);
+}
+
+.about {
+  &__content {
+    width: 100%;
+    max-width: 730px;
+    margin: 0 auto;
+    &-text {
+      padding-bottom: 50px;
+      font-size: 16px;
+      color: $text-color;
+    }
+    &-title {
+      padding-bottom: 50px;
+    }
+    &-subtitle {
+      @extend %AdventPro-400;
+      font-size: 18px;
+      padding-bottom: 30px;
+    }
+  }
+  &__img {
+    padding: 30px 0 80px;
+  }
+  &__quote {
+    border: 2px solid $accent-color;
+    padding: 35px 40px 35px 160px;
+    width: 100%;
+    max-width: 730px;
+    margin: 50px auto 200px;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 35px;
+      left: 40px;
+      background-image: url(../images/icons/quotes.svg);
+      width: 50px;
+      height: 38px;
+    }
+    &-text {
+      font-size: 20px;
+      @extend %WorkSans-600;
+      margin-bottom: 30px;
+      line-height: 1.8;
+
+    }
+    &-prof {
+      margin-top: 10px;
+      color: $text-color;
+    }
+  }
+  &__gallery {
+    margin-bottom: 120px;
+    display: grid;
+    grid-gap: 30px;
+   // grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    .second {
+      grid-row: 1/span 2;
+      grid-column: 2/span 2;
+    }
+  }
+  &__statistics {
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    &-item {
+      display: flex;
+      align-items: center;
+    }
+    &-num {
+      color: $accent-color;
+      font-size: 60px;
+      @extend %WorkSans-700;
+      margin: 0 25px;
+      position: relative;
+      span {
+        font-size: 30px;
+        position: absolute;
+        top: -10px;
+        right: -18px;
+      }
+    }
+    &-text {
+      text-transform: uppercase;
+      @extend %WorkSans-600;
+      line-height: 1.4;
+    }
+  }
+  &__list {
+    width: 100%;
+    max-width: 730px;
+    margin: 0 auto 100px;
+    padding-top: 65px !important;   
+    border-top: 1px solid $text-color;
+    &-item {
+      color: $text-color;
+      line-height: 1.5;
+      padding-left: 20px;
+      position: relative;
+      margin-bottom: 5px;
+      &::before {
+        content: '';
+        position: absolute;
+        top: 10px;
+        left: 0;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background-color: $text-color;
+      }
+    }
+  }
+}
+
+.options {
+  padding: 150px 0 50px;
+  &__table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    &-row {
+      &:nth-child(even) {
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+      &--title {
+        background-color: $accent-color;
+        color: $default-color1;
+        @extend %WorkSans-700;
+        font-size: 18px;
+        text-align: center;
+      }
+    }
+    &-cell {
+      width: 30%;
+      text-align: center;
+      @extend %WorkSans-600;
+      padding: 20px;
+      .icon {
+        fill: $accent-color;
+        width: 13px;
+        height: 13px;
+      }
+      &:first-child {
+        text-align: start;
+      }
+    }
+  }
+}
+
+

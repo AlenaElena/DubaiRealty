@@ -1,0 +1,47 @@
+.intro-section--apartament {
+  background-image: url(../images/apartament-bg.jpg);
+}
+.apartments {
+  padding: 40px 0 100px;
+  &__wrap {
+    margin-top: 70px;
+    position: relative;
+  }
+  .slider-buttons {
+    width: 100%;
+    top: 40%;
+    position: absolute;
+    .swiper-button-prev,
+    .swiper-button-next {
+      &::after {
+        width: 15px;
+        height: 21px;
+      }
+    }
+    .swiper-button-prev {
+      left: -50px !important;
+      &::after {
+        background-image: url(../images/icons/arrow-slider-prev.svg);
+      }
+    }
+    .swiper-button-next {
+      right: -50px !important;
+      &::after {
+        background-image: url(../images/icons/arrow-slider-next.svg);
+      }
+    }
+  }
+}
+.offers {
+  padding-bottom: 120px;
+}
+.description {
+  padding-bottom: 80px;
+  &__subtitle {
+    font-size: 25px;
+  }
+  &__text {
+    padding: 50px 0 80px;
+    color: $text-color;
+  }
+}

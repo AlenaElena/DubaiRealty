@@ -1,0 +1,110 @@
+html,
+body {
+  height: 100vh;
+  overflow-x: hidden;
+  min-width: 320px;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  text-rendering: optimizeSpeed;
+  background-color: $default-color1;
+  font-size: 16px;
+  line-height: 1.1;
+  color: #fff;
+  margin: 0 auto;
+  @extend %WorkSans-400;
+}
+.main {
+  flex-grow: 1;
+}
+
+h1 {
+  @extend %SpaceGrotesk-700;
+  font-size: 96px;
+}
+h2 {
+  @extend %AdventPro-400;
+  font-size: 120px;
+}
+
+h3 {
+  @extend %AdventPro-400;
+  font-size: 70px;
+}
+h4 {
+  @extend %AdventPro-400;
+  font-size: 60px;
+}
+h5 {
+  @extend %AdventPro-400;
+  font-size: 48px;
+}
+h6 {
+  @extend %AdventPro-400;
+  font-size: 32px;
+}
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: $default-color2;
+}
+
+
+button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+input {
+  background-color: transparent;
+  border: none;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1110px;
+}
+.container-fluid {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 55px;
+  max-width: 1920px;
+  //max-width: 1810px;
+}
+.btnBook {
+  text-align: center;
+  background-color: $accent-color;
+  color: $default-color1;
+  border: 2px solid transparent;
+  padding: 12px;
+  @extend %WorkSans-600;
+  cursor: pointer;
+  transition: all 0.7s;
+  width: 165px;
+  font-size: 14px;
+  &:hover {
+    color: $accent-color;
+    background-color: transparent;
+    border-color: $accent-color;
+  }
+}
+.link {
+  position: relative;
+  padding-right: 35px;
+  @extend %WorkSans-700;
+  font-size: 23px;
+  width: fit-content;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5px;
+    width: 13px;
+    height: 21px;
+  }
+}
