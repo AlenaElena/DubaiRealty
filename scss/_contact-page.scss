@@ -1,0 +1,111 @@
+.contact-page {
+  padding: 180px 0 150px;
+  &__title {
+    cursor: pointer;
+  }
+  &__map {
+    position: relative;
+    padding: 90px 0 200px;
+    .iframe-map {
+      display: block;
+      margin: auto;
+      width: 100%;
+      max-width: 1800px;
+      height: 770px;
+    }
+    &-menu {
+      line-height: 1.4;
+      transition: all 0.6s;
+      transform: scale(0);
+      position: absolute;
+      top: 17%;
+      left: 20%;
+      max-width: 544px;
+      width: 100%;
+      background-color: $default-color1;
+      padding: 80px 90px 88px;
+      height: 605px;
+      color: $text-color;
+      &__close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+      }
+      &__title {
+        font-size: 32px;
+        @extend %WorkSans-700;
+        margin-bottom: 35px;
+        color: #fff;
+        span {
+          color: $accent-color;
+        }
+      }
+      &__number {
+        margin: 60px 0;
+        color: #fff;
+      }
+      &__info {
+        padding-top: 30px;
+        span {
+          color: #fff;
+          @extend %WorkSans-700;
+        }
+      }
+      &--active {
+        transform: scale(1);
+      }
+    }
+  }
+  &__subtitle {
+    span {
+      color: $accent-color;
+    }
+  }
+  &__form {
+    margin-top: 70px;
+    &-wrap {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 30px;
+    }
+    &-input,
+    &-textarea {
+      border: 1px solid #C9C9C9;
+      padding: 16px 18px;
+      @extend %WorkSans-500;
+      color: $text-color;
+      &::placeholder {
+        color: $text-color;
+        @extend %WorkSans-400;
+      }   
+    }
+    &-input {
+      flex-basis: 30%;
+      margin-right: 10px;
+      &:last-child {
+        margin-right: 0px;
+      }
+    }
+    &-textarea {
+      width: 100%;
+      height: 220px;
+      resize: none;
+      background-color: transparent;
+    }
+    &-btn {
+      margin-top: 30px;
+      text-transform: uppercase;
+      background-color: $accent-color;
+      border: 1px solid transparent;
+      @extend %WorkSans-500;
+      color: $default-color1;
+      padding: 14px;
+      width: 151px;
+      &:hover {
+        background-color: transparent;
+        color: $accent-color;
+        border-color: $accent-color;
+      }
+    }
+  }
+}

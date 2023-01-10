@@ -1,0 +1,40 @@
+.blog {
+  padding: 180px 0 150px;
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 70px;
+    &-form {
+      width: 100%;
+      max-width: 813px;
+      position: relative;
+      margin-left: 80px;
+    }
+    &-input {
+      border: 1px solid $text-color;
+      border-radius: 0;
+      padding: 24px 19px;
+      width: 100%;
+      height: 75px;
+      color: $text-color;
+      font-size: 16px;
+      &::placeholder {
+        color: $text-color;
+        font-size: 16px;
+      }
+      &:focus {
+        outline-color: $text-color;
+        border-radius: 0;
+      }
+    }
+    &-btn {
+      position: absolute;
+      top: 22px;
+      right: 22px;
+      width: 30px;
+      height: 30px;
+      background-image: url(../images/icons/search-icon.svg);
+    }
+  }
+}
